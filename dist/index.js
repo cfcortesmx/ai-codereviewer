@@ -122,6 +122,9 @@ function createPrompt(file, chunk, prDetails) {
     return `Your task is to review pull requests. Instructions:
 - Provide the response in following JSON format:  [{"lineNumber":  <line_number>, "reviewComment": "<review comment>"}]
 - Do not give positive comments or compliments.
+- Your comments should focus on areas where the code can be improved or optimized. Provide specific suggestions and explanations to help the developer understand the suggested changes.
+- IMPORTANT: Avoid generic or non-actionable comments. Focus on constructive feedback that can enhance the code quality and maintainability.
+- Remember to follow good coding practices and provide suggestions that align with the project's coding standards and best practices for ruby on rails projects .
 - Provide comments and suggestions ONLY if there is something to improve, otherwise return an empty array.
 - Write the comment in GitHub Markdown format.
 - Use the given description only for the overall context and only comment the code.
